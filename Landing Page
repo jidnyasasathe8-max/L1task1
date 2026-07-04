@@ -1,0 +1,258 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">FitLife</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Transform Your Fitness Journey</h1>
+            <p>Achieve your health goals with expert workout plans, nutrition guides, and motivation.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <h2>Our Features</h2>
+
+        <div class="feature-container">
+
+            <div class="card">
+                <h3>🏋️ Workout Plans</h3>
+                <p>Customized workout routines for beginners and professionals.</p>
+            </div>
+
+            <div class="card">
+                <h3>🥗 Nutrition Guide</h3>
+                <p>Healthy meal plans designed by fitness experts.</p>
+            </div>
+
+            <div class="card">
+                <h3>📈 Progress Tracking</h3>
+                <p>Track your daily fitness improvements with ease.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            FitLife is dedicated to helping people live healthier lives through
+            personalized fitness programs, nutrition advice, and professional guidance.
+            We believe fitness should be simple, enjoyable, and accessible to everyone.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>© 2026 FitLife. All Rights Reserved.</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+style.css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    background:#f4f4f4;
+}
+
+/* Navigation */
+
+.navbar{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0A3D62;
+    padding:15px 8%;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#F6B93B;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(10,61,98,0.7),rgba(10,61,98,0.7)),
+    url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    font-size:20px;
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#F6B93B;
+    color:#000;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* Features */
+
+.features{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.features h2{
+    font-size:36px;
+    margin-bottom:40px;
+}
+
+.feature-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0A3D62;
+}
+
+/* About */
+
+.about{
+    background:#0A3D62;
+    color:white;
+    text-align:center;
+    padding:60px 8%;
+}
+
+.about h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+footer a{
+    color:#F6B93B;
+    text-decoration:none;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        text-align:center;
+        margin-top:10px;
+    }
+
+    .nav-links li{
+        margin:10px 0;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+}
